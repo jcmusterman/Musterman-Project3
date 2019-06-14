@@ -1,26 +1,25 @@
-/*I made use of a lot of classes. I don't know if there is a simpler or more elegant method but I was able to make this work*/
+
 
 body{
   background-color:#fffdd0;
   font-family:sans-serif;
   margin:20px;
 }
-p.basicborder{
+.basicborder{
   border:2px dashed red;
   height: 30px;
 }
 
-p.typesofborders{
-  min-height: 100px; /*I don't remember seeing anything about a minimum height in chapter 3. I found min-height via Google. At first I tried height: 100px but that made the text flow over the border. I also noticed that omitting height all together doesn't make a difference, probably because the width is defined and there is enough text*/
+.typesofborders{
+  min-height: 100px;
   width: 300px;
-  border-width: 10px;
-  border-left: dashed red;
-  border-right: dotted black;
-  border-top: double purple;
-  border-bottom: groove orange;
+  border-left: dashed red 10px;
+  border-right: dotted black 10px;
+  border-top: double purple 10px;
+  border-bottom: groove orange 10px;
 }
 
-p.cellpaddingexample{
+.cellpaddingexample{
   border:5px solid green;
   padding-left: 10px;
   padding-right: 50px;
@@ -28,37 +27,47 @@ p.cellpaddingexample{
   padding-bottom: 100px;
 }
 
-p.marginexample{
+.marginexample{
   border: 10px solid blue;
   margin: 20 100 200 50;
 
 }
 
-section.nofloat{
+.floatleft{
+float: left;
+}
+
+.floatright{
+  float: right;
+}
+
+.nofloat{
   border: 2px solid blue;
   height: 300px;
   width: 500px;
 }
 
-section.floatleft{
+.floatleftbox{
   border: 2px solid purple;
   height: 300px;
   width: 500px;
 }
-  img.floatleft{float: left;}
 
-section.floatright{
+.floatrightbox{
   border: 2px solid orange;
   height: 300px;
   width: 500px;
 }
-  img.floatright{float: right;}
 
 
-section.overflowhidden{
+
+.overflowhiddenbox{
   border: 2px solid green;
   height: 100px;
   width: 800px;
   overflow: hidden;
 }
-  img.overflowhidden{float: left;}
+
+.overflowhidden{
+  float: left;
+}
